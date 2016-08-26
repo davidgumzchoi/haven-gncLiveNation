@@ -172,7 +172,7 @@ form {
   background: rgba(255,255,255,0.8);
   border: 2px solid #ddd;
   padding: 25px;
-  width: 480px;
+  width: 530px;
 }
 
 form .row {
@@ -240,7 +240,7 @@ form input.phoneNumber {
   background: url('assets/button-form.png') 0 0 no-repeat transparent;
   height: 97px;
   display: inline-block;
-  margin: 20px -43px 0 2px;
+  margin: 20px -47px 0 0;
   width: 206px;
   vertical-align: top;
 }
