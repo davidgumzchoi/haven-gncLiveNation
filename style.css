@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'DinConBold';
+  src: url('fonts/din-condensed-bold.eot');
+  src: url('fonts/din-condensed-bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/din-condensed-bold.woff2') format('woff2'),
+       url('fonts/din-condensed-bold.woff') format('woff'),
+       url('fonts/din-condensed-bold.ttf') format('truetype'),
+       url('fonts/din-condensed-bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'MochaMattari';
+  src: url('fonts/MochaMattari.eot');
+  src: url('fonts/MochaMattari.eot?#iefix') format('embedded-opentype'),
+       url('fonts/MochaMattari.woff2') format('woff2'),
+       url('fonts/MochaMattari.woff') format('woff'),
+       url('fonts/MochaMattari.ttf') format('truetype'),
+       url('fonts/MochaMattari.svg#svgFontName') format('svg');
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1134px;
+}
+
+a {
+  color: #d71921;
+}
+
+sup {
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: top;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flexbox section {
+  flex: 1 100%;
+}
+
+.flexbox aside {
+  flex: 1 auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.asterisk {
+  color: #d71921;
+}
+
+.text-small {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background: url('assets/background.png') top center no-repeat transparent;
+  font-family: 'DinConBold', Arial, sans-serif;
+  line-height: 1;
+  margin: 0;
+}
+
+header {
+  background: url('assets/header-bg.png') top center no-repeat transparent;
+  height: 67px;
+  line-height: 67px;
+}
+
+header .logo-gnc {
+  padding: 0 20px 0 35px;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+header h4 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+header .social {
+  padding-right: 15px;
+}
+
+.main {
+  margin-top: 35px;
+}
+
+section h3 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.ribbon {
+  background: url('assets/ribbon.png') 0 0 no-repeat transparent;
+  height: 137px;
+  margin: 25px 0 0 -225px;
+}
+
+.ribbon h3 {
+  color: #fff;
+  margin-left: 225px;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+.ribbon h3:first-child {
+  padding-top: 20px;
+}
+
+.winner h3 {
+  margin-top: -15px;
+}
+
+section li {
+  background: url('assets/bullet-1.png') top left no-repeat transparent;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 5px;
+  padding: 4px 0 0 45px;
+}
+
+section li:nth-child(1) {
+  background: url('assets/bullet-2.png') top left no-repeat transparent;
+}
+
+section li:nth-child(2) {
+  background: url('assets/bullet-3.png') top left no-repeat transparent;
+}
+
+form {
+  background: rgba(255,255,255,0.8);
+  border: 2px solid #ddd;
+  padding: 25px;
+  width: 480px;
+}
+
+form .row {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+form input {
+  background: #eee;
+  border: 1px solid #111;
+  color: #888;
+  font-family: "DinConBold", Arial, sans-serif;
+  font-size: 24px;
+  padding: 10px 10px 5px;
+  width: 210px;
+}
+
+form select {
+  appearance: none;
+  -moz-apperance: none;
+  -webkit-appearance: none;
+  background: url('assets/arrow.png') 200px 18px no-repeat #eee;
+  border: 1px solid #111;
+  border-radius: 0;
+  color: #888;
+  font-family: "DinConBold", Arial, sans-serif;
+  font-size: 24px;
+  padding: 10px 10px 5px;
+  width: 232px;
+}
+
+form input.phoneNumber {
+  width: 53px;
+}
+
+.checkbox label {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.checkbox input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #eee;
+  border: 1px solid #111;
+  margin: 0 5px 5px 0;
+  padding: 10px;
+  vertical-align: middle;
+  width: auto;
+}
+
+.checkbox input:checked:after {
+	content: '\2713';
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+
+.button {
+  background: url('assets/button-form.png') 0 0 no-repeat transparent;
+  height: 97px;
+  display: inline-block;
+  margin: 20px -43px 0 2px;
+  width: 206px;
+  vertical-align: top;
+}
+
+.button a {
+  color: #fff;
+  display: block;
+  font-family: "MochaMattari", Arial, sans-serif;
+  font-size: 45px;
+  padding: 18px 0;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+footer {
+  background: url('assets/footer-bg.png') top center no-repeat transparent;
+  font-family: "Helvetica", Arial, sans-serif;
+  height: 495px;
+  margin-top: -145px;
+}
+
+footer .container {
+  padding-top: 300px;
+}
+
+footer p {
+  color: #888;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+footer p:last-child {
+  margin-top: 30px;
+}
+
+footer a {
+  text-decoration: underline;
+}
