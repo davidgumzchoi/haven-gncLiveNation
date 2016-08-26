@@ -18,6 +18,20 @@
        url('fonts/MochaMattari.svg#svgFontName') format('svg');
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
 .pull-left {
   float: left;
 }
@@ -28,6 +42,7 @@
 
 .container {
   margin: 0 auto;
+  /*min-width: 800px;*/
   width: 1134px;
 }
 
@@ -171,7 +186,8 @@ form label {
   margin-bottom: 3px;
 }
 
-form input {
+form input,
+form select {
   background: #eee;
   border: 1px solid #111;
   color: #888;
@@ -185,18 +201,12 @@ form select {
   appearance: none;
   -moz-apperance: none;
   -webkit-appearance: none;
-  background: url('assets/arrow.png') 200px 18px no-repeat #eee;
-  border: 1px solid #111;
+  background: url('assets/arrow.png') 97.5% 50% no-repeat #eee;
   border-radius: 0;
-  color: #888;
-  font-family: "DinConBold", Arial, sans-serif;
-  font-size: 24px;
-  padding: 10px 10px 5px;
-  width: 232px;
 }
 
 form input.phoneNumber {
-  width: 53px;
+  width: 16%;
 }
 
 .checkbox label {
@@ -269,4 +279,153 @@ footer p:last-child {
 
 footer a {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1134px) {
+  .container {
+    height: auto;
+    overflow: hidden;
+    padding: 0 .5em;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  header {
+    background: black;
+    border-bottom: .375em solid #d71921;
+  }
+
+  header .logo-gnc {
+    padding-left: 0;
+    padding-right: .375em;
+  }
+
+  header .social {
+    padding-right: 0;
+  }
+
+  .main .promo-sweepstakes {
+    height: auto;
+    margin-bottom: 1em;
+    max-width: 100%;
+  }
+
+  .ribbon {
+    background: #d71921;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: .5em;
+  }
+
+  .ribbon h3 {
+    display: inline;
+    margin: 0;
+  }
+
+  .ribbon h3:first-child {
+    padding-top: .375em;
+  }
+
+  section h3 {
+    font-size: 2em;
+  }
+
+  .winner h3 {
+    margin-top: .375em;
+  }
+
+  section .winner li {
+    background-size: 1.25em;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    padding-left: 1.5em;
+  }
+
+  .flexbox {
+    display: block;
+  }
+
+  .flexbox section,
+  .flexbox aside {
+    flex: none;
+  }
+
+  form {
+    margin: 0 -8px;
+    padding: .5em;
+    width: 100%;
+  }
+
+  form .pull-left,
+  form .pull-right {
+    float: none;
+    width: 100%;
+  }
+
+  form label {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  form input,
+  form select {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  form .row {
+    margin-bottom: 0;
+  }
+
+  form .row > div {
+    margin-bottom: 1em;
+  }
+
+  .submit {
+    margin-top: 1em;
+    overflow: hidden;
+  }
+
+  .submit .button {
+    float: right;
+    margin: 0;
+  }
+
+  form .form-verification {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  footer .container {
+    padding-top: 275px;
+  }
+
+  footer p {
+    margin-bottom: .375em;
+  }
+
+  footer p:last-child {
+    margin-top: .375em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1134px) {
+  .image-container {
+    text-align: center;
+  }
+
+  form .pull-left {
+    float: left;
+    width: 49.5%
+  }
+  form .pull-right {
+    float: right;
+    width: 49.5%
+  }
 }
